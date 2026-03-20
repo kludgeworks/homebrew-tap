@@ -1,48 +1,40 @@
-# Homebrew
+# Homebrew Tap
 
-## Formulae
-Invoke either of the following commands if the formula is hosted at GitHub
+This repository contains the Homebrew formula for `mcp-sparql`.
 
-```sh
-$ brew install kludgeworks/tap/<formula>
-```
+## Install
 
-Or
+Install directly from the tap:
 
 ```sh
-$ brew tap kludgeworks/tap
-$ brew install <formula>
+brew install kludgeworks/tap/mcp-sparql
 ```
 
-Invoke the following command if the formula is *not* hosted at GitHub
+Or tap the repository first and then install:
 
 ```sh
-brew tap kludgeworks/homebrew-tap https://github.com/kludgeworks/homebrew-tap.git
-brew install <formula>
+brew tap kludgeworks/tap
+brew install mcp-sparql
 ```
 
-## Casks
-Invoke either of the following commands if the cask is hosted at GitHub
+## Update
 
 ```sh
-$ brew install --cask kludgeworks/tap/<cask>
+brew update
+brew upgrade mcp-sparql
 ```
 
-Or
+## Uninstall
 
 ```sh
-$ brew tap kludgeworks/tap
-$ brew install --cask <cask>
+brew uninstall mcp-sparql
 ```
 
-Invoke the following command if the cask is *not* hosted at GitHub
+## Repository
 
-```sh
-brew tap kludgeworks/homebrew-tap https://github.com/kludgeworks/homebrew-tap.git
-brew install --cask <formula>
-```
-
-If you get a dialog stating the cask is broken try installing with `--no-quarantine`.
+- Source: https://github.com/kludgeworks/mcp-server-rdf
+- Tap: https://github.com/kludgeworks/homebrew-tap
 
 ## Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+See `brew help`, `man brew`, or the [Homebrew documentation](https://docs.brew.sh).
