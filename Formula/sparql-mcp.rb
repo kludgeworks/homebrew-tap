@@ -1,22 +1,22 @@
-# Generated with JReleaser 1.23.0 at 2026-03-21T13:13:19.256621434Z
+# Generated with JReleaser 1.26.0 at 2026-09-23T22:32:10.393077825Z
 
 class SparqlMcp < Formula
   desc "MCP server to query SPARQL servers"
   homepage "https://github.com/kludgeworks/mcp-server-rdf"
-  version "0.2.7"
+  version "0.3.0"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.2.7/sparql-mcp-0.2.7-linux-aarch64.zip"
-    sha256 "c8f9aae10173ddbfa138438147749606a086741100dae0cf8ac54c5d146bcfcc"
+    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.3.0/sparql-mcp-0.3.0-linux-aarch64.zip"
+    sha256 "4394e52f6206e2a0bd44a3f98646db0da9e21be81a0b9e5a2cdb2258e1f18f81"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.2.7/sparql-mcp-0.2.7-linux-x64.zip"
-    sha256 "3dec3221f601a9d4b29a48b7d18d765f3f01b1889fab9aae33115ae3bfdbd854"
+    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.3.0/sparql-mcp-0.3.0-linux-x64.zip"
+    sha256 "2bfd5d5e2105e63b5ef7f60df3e8fd7865623a85e57335ea049de852c77b4142"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.2.7/sparql-mcp-0.2.7-osx-aarch64.zip"
-    sha256 "19145a22ab1b9362b2fc2eb070057965a42aa748b0a0883836e765ed80f6eb1b"
+    url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.3.0/sparql-mcp-0.3.0-osx-aarch64.zip"
+    sha256 "f8c05b5cb34923ee33638805578e064d214cb63dbc89508f674f9b602514900c"
   end
 
 
@@ -27,6 +27,6 @@ class SparqlMcp < Formula
 
   test do
     output = shell_output("#{bin}/sparql-mcp --version")
-    assert_match "0.2.7", output
+    assert_match "0.3.0", output
   end
 end
