@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.26.0 at 2026-10-13T21:09:26.502850057Z
+# Generated with JReleaser 1.26.0 at 2026-10-15T17:14:33.926493764Z
 
 class SparqlMcp < Formula
   desc "MCP server to query SPARQL servers"
@@ -8,15 +8,15 @@ class SparqlMcp < Formula
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.4.0/sparql-mcp-0.4.0-linux-aarch64.zip"
-    sha256 "6eaf981553b90a3849255a57254a00ec2b6f0cfda27221668e72308964e4af7f"
+    sha256 "10e41faf336552b58d3f416f137bf1b5ed1b2ca0e480e91948b52fe844af143d"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.4.0/sparql-mcp-0.4.0-linux-x64.zip"
-    sha256 "bcbac0087a9497443398649311c738546ccdfe444928e60ded268c1588d9962c"
+    sha256 "4d660a82b4ce3bbfa13b8a1e1dc5b6f5ca38e2cbc13d82db64af5282942ce952"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kludgeworks/mcp-server-rdf/releases/download/v0.4.0/sparql-mcp-0.4.0-osx-aarch64.zip"
-    sha256 "5045846a663a0ba99e61f12cf75f0ea676d0db9639a7d8d59d237240ee72db40"
+    sha256 "0c2e28ae428b820f84017e77966451e3bd9abda340894f1bc9515f48840c9bf4"
   end
 
 
